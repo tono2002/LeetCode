@@ -1,3 +1,6 @@
+
+import java.util.*;
+
 class Solution {
 
     // Time complexity: 0(n k log k), where n is the length of strs and k is the maximum length of a string in strs
@@ -6,7 +9,7 @@ class Solution {
     // Space complexity: 0(n k), where n is the number of strings in the map, and k is the length of the longest string
 
     public List<List<String>> groupAnagrams(String[] strs) {
-        if(strs.length == 0) return new ArrayList();
+        if(strs.length == 0) return new ArrayList<>();
         Map<String, List> map = new HashMap<>();
 
         for(int i = 0; i < strs.length; i++){

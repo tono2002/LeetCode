@@ -1,5 +1,4 @@
-217. Contains Duplicate
-
+import java.util.*;
 // Approachment 1: Brute-force solution.
 // Complexity analysis:
 	// Time complexity: 0(n^2): It iterates at most through the n elements of the array n times.
@@ -20,7 +19,7 @@ class Solution {
 
     //Aproachment 2: Using a HashSet
 
-    public boolean containsDuplicate(int[] nums) {
+    public boolean containsDuplicate2(int[] nums) {
 
         HashSet<Integer> numbers = new HashSet();
         
