@@ -16,11 +16,10 @@ class Solution {
         }
         return false;
     }
-}
 
-//Aproachment 2: Using a HashSet
 
-class Solution {
+    //Aproachment 2: Using a HashSet
+
     public boolean containsDuplicate(int[] nums) {
 
         HashSet<Integer> numbers = new HashSet();

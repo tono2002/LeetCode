@@ -22,24 +22,24 @@ class Solution {
         // In case there is no Solution
         return null;
     }
-}
 
-// Approach 2: Two-pass(iterations) Hash Table
-// We need a more efficient way to check if the complement exists in the array.
 
-// Best way to maintain a mapping of each element in the array to its index: Hash Table
+    // Approach 2: Two-pass(iterations) Hash Table
+    // We need a more efficient way to check if the complement exists in the array.
 
-// Two iterations
-    // First iteration: For each element-> K: element / V: element's index
-    // Second iteration: Check if each element's complement exists in the hash table
+    // Best way to maintain a mapping of each element in the array to its index: Hash Table
 
-    // Beware that the complement must not be nums[i] itself!
+    // Two iterations
+        // First iteration: For each element-> K: element / V: element's index
+        // Second iteration: Check if each element's complement exists in the hash table
 
-// Time complexity: 0(n) -> We go trough the n elements twice, but hash table reduces the lookup time to 0(1)
-// Space complexity: 0(n) -> Depends on the number of items stored in the hash table, n elements.
+        // Beware that the complement must not be nums[i] itself!
 
-class Solution{
-    public int[] twoSum(int[] nums, int target){
+    // Time complexity: 0(n) -> We go trough the n elements twice, but hash table reduces the lookup time to 0(1)
+    // Space complexity: 0(n) -> Depends on the number of items stored in the hash table, n elements.
+
+
+    public int[] twoSum2(int[] nums, int target){
         // Create the Hash Table 
         Map<Integer, Integer> map = new HashMap<>();
 
