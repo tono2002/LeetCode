@@ -18,7 +18,8 @@ class Solution {
 
 
     //Aproachment 2: Using a HashSet
-
+        // Time complexity: 0(n)
+        // Space complexity: 0(n)
     public boolean containsDuplicate2(int[] nums) {
 
         HashSet<Integer> numbers = new HashSet();

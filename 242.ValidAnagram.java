@@ -1,6 +1,9 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
         
+        // Time complexity: 0(n)
+        // Space complexity: 0(1)
+        
         // Two anagrams must have the same size
         if(s.length() != t.length()) return false;
 

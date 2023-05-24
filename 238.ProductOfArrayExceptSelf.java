@@ -1,4 +1,8 @@
 class Solution {
+
+    // Time complexity: 3 loops * n iterations = 3n = 0(n)
+    // Space complexity: 0(n): We use 3 arrays of size n
+    
     public int[] productExceptSelf(int[] nums) {
         int length = nums.length;
 

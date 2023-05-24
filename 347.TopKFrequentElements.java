@@ -1,5 +1,9 @@
 import java.util.*;
 class Solution {
+
+    // Time complexity: 0(n log n): n for the loop and log n for the insertion in the priority queue
+    // Space complexity: 0(n): The Map will store at most n elements.
+
     public int[] topKFrequent(int[] nums, int k) {
 
         Map<Integer, Integer> map = new HashMap<>();
